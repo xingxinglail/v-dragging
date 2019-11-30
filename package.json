@@ -1,13 +1,16 @@
 {
   "name": "v-dragging",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A vue drag library",
-  "main": "dist/vuedrag.umd.js",
+  "main": "dist/v-dragging.umd.min.js",
+  "module": "dist/v-dragging.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name vuedrag src/index.js",
+    "build": "vue-cli-service build --target lib --name v-dragging src/index.js",
     "dev-test": "karma start",
     "test": "cross-env BABEL_ENV=test karma start --single-run",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "commit": "git-cz"
   },
   "author": "star",
@@ -41,7 +44,8 @@
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
     "syn": "^0.14.1",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "vuepress": "^1.2.0"
   },
   "eslintConfig": {
     "root": true,
