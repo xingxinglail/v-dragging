@@ -1,7 +1,6 @@
 {
-  "name": "vuedrag",
+  "name": "v-dragging",
   "version": "0.0.1",
-  "private": false,
   "description": "A vue drag library",
   "main": "dist/vuedrag.umd.js",
   "scripts": {
