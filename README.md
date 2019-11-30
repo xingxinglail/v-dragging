@@ -11,7 +11,7 @@
 
 </div>
 
-[WxP UI 小程序插件](https://github.com/singletouch/wx-plugin) Drag 组件的 Vue 版本。
+> [WxP UI 小程序插件](https://github.com/singletouch/wx-plugin) Drag 组件的 Vue 版本。
 
 [在线例子]()
 
