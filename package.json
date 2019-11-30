@@ -6,7 +6,7 @@
   "module": "dist/v-dragging.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name v-dragging src/index.js",
+    "build": "vue-cli-service build --target lib --name v-dragging src/Drag.vue",
     "dev-test": "karma start",
     "test": "cross-env BABEL_ENV=test karma start --single-run",
     "docs:dev": "vuepress dev docs",
