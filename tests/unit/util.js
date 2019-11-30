@@ -1,4 +1,4 @@
-import Drag from '../../src/components/Drag';
+import Drag from '../../src/Drag';
 
 export const Component = {
     template: `

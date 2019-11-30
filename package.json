@@ -16,7 +16,6 @@
   "author": "star",
   "license": "MIT",
   "dependencies": {
-    "core-js": "^3.4.3",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -28,6 +27,7 @@
     "babel-plugin-istanbul": "^5.2.0",
     "chai": "^4.1.2",
     "commitizen": "^4.0.3",
+    "core-js": "^3.4.5",
     "cross-env": "^6.0.3",
     "cz-conventional-changelog": "3.0.2",
     "eslint": "^5.16.0",
