@@ -4,15 +4,15 @@
 
 <p>一个 vue 拖放排序组件。</p>
 
-[![Build Status](https://www.travis-ci.org/xingxinglail/vuedrag.svg?branch=master)](https://www.travis-ci.org/xingxinglail/vuedrag)
-[![codecov](https://codecov.io/gh/xingxinglail/vuedrag/branch/master/graph/badge.svg)](https://codecov.io/gh/xingxinglail/vuedrag)
+[![Build Status](https://www.travis-ci.org/xingxinglail/v-dragging.svg?branch=master)](https://www.travis-ci.org/xingxinglail/vuedrag)
+[![codecov](https://codecov.io/gh/xingxinglail/v-dragging/branch/master/graph/badge.svg)](https://codecov.io/gh/xingxinglail/vuedrag)
 [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
 </div>
 
 
-[在线例子](https://github.com/mauricius/vue-draggable-resizable/tree/v1)
+[在线例子]()
 
 ## ✨ 特性
 
@@ -31,11 +31,11 @@
 ## 📦 安装
 
 ```bash
-npm install drag
+npm install v-dragging
 ```
 
 ```bash
-yarn add drag
+yarn add v-dragging
 ```
 
 ## 🔨 示例
