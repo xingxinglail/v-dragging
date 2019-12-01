@@ -184,8 +184,6 @@ export default {
             let tranX = currentPageX - startPageX + _startTranX;
             const tranY = currentPageY - startPageY + _startTranY;
 
-            // 单列时候X轴初始不做位移
-            if (this.columns === 1) tranX = 0;
             const { _innerList, _cur } = this;
             const originKey = _innerList[_cur].key;
             // 获取 originKey 和 endKey
