@@ -1,4 +1,5 @@
 export const isSupportTouch = () => {
+    if (typeof window === 'undefined') return false;
     return ('ontouchstart' in window) || window.DocumentTouch && document instanceof window.DocumentTouch;
 };
 

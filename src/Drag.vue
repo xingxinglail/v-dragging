@@ -241,6 +241,7 @@ export default {
             const { value, handle, touchstart, mousedown, touchmove, touchend } = this;
             if (!value) this._innerList = [];
             const wrapper = this.$refs.wrapper;
+            if (!wrapper) return;
             const children = [].slice.call(wrapper.children);
             this._innerList = children.map((child, index) => {
                 const el = child;
