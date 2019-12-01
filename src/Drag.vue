@@ -90,6 +90,7 @@ export default {
             this.endHandle();
         },
         mousedown (e) {
+            e.preventDefault();
             const { pageX, pageY } = e;
             this.startHandle(e, pageX, pageY);
         },
@@ -246,8 +247,10 @@ export default {
             this._innerList = children.map((child, index) => {
                 const el = child;
                 let fixed = false;
-                removeClass(el, 'drag__item'); // 删除、增加时移除过度效果
+                addClass(el, 'drag__item');
+                removeClass(el, 'transition');
                 if (hasClass(el, handle)) {
+                    removeClass(el, 'low');
                     if (this._isSupportTouch) {
                         el.addEventListener('touchstart', touchstart);
                         el.addEventListener('touchmove', touchmove);
@@ -256,6 +259,7 @@ export default {
                         el.addEventListener('mousedown', mousedown);
                     }
                 } else {
+                    addClass(el, 'low');
                     fixed = true;
                 }
 
@@ -277,11 +281,11 @@ export default {
                 };
             });
             this.getPosition(this._innerList, false);
-            this.$nextTick(() => {
+            setTimeout(() => {
                 children.forEach(child => {
-                    addClass(child, 'drag__item');
+                    addClass(child, 'transition');
                 });
-            });
+            }, 50);
         },
         /**
          * 根据排序后 list 数据进行位移计算
@@ -422,10 +426,14 @@ export default {
 
         .drag__item {
             position: absolute;
-            transition: transform 0.3s;
+            z-index: 1;
 
-            &.z-index {
-                z-index: 10;
+            &.low {
+                z-index: 0;
+            }
+
+            &.transition {
+                transition: transform 0.3s;
             }
         }
     }
