@@ -5,7 +5,7 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: '主页', link: '/' },
-            { text: 'GitHub', link: 'https://github.com/xingxinglail/v-dragging' },
+            { text: 'GitHub', link: 'https://github.com/xingxinglail/v-dragging' }
         ],
         sidebar: [
             {
@@ -14,8 +14,9 @@ module.exports = {
                 children: [
                     '/',
                     '/example/',
+                    '/api/'
                 ]
             }
         ]
     }
-}
+};

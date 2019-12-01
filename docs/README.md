@@ -23,7 +23,7 @@ title: 介绍
 
 > [WxP UI 小程序插件](https://github.com/singletouch/wx-plugin) Drag 组件的 Vue 版本。
 
-[在线例子]()
+[在线例子](https://xingxinglail.github.io/v-dragging/example/)
 
 ## ✨ 特性
 
@@ -50,3 +50,37 @@ yarn add v-dragging
 
 ## 🔨 示例
 
+```js
+import Drag from 'v-dragging';
+Vue.component('Drag', Drag)
+```
+
+```vue
+<drag
+    handle="draggable"
+    :value="list"
+    :columns="columns"
+    @choose="choose"
+    @un-choose="unChoose"
+    @start="start"
+    @end="end"
+    @update="update">
+    <div class="item"
+         v-for="item in list"
+         :class="item.disabled ? 'disabled' : 'draggable'"
+         :key="item.name">
+        <div class="inner">
+            <img :src="item.img" width="100%">
+        </div>
+    </div>
+</drag>
+```
+
+## ⌨️ 本地开发
+
+```bash
+$ git clone git@github.com:xingxinglail/v-dragging.git
+$ cd v-dragging
+$ yarn install
+$ yarn run docs:dev
+```
